@@ -1,0 +1,17 @@
+.detalle-pais {
+  background-color: #f0f8ff;
+  border: 1px solid #d1e7ff;
+  border-radius: 8px;
+  padding: 16px;
+  margin-top: 16px;
+}
+
+.detalle-pais p {
+  margin: 0;
+  font-size: 18px;
+  color: #333;
+}
+
+.detalle-pais p:not(:last-child) {
+  margin-bottom: 10px;
+}

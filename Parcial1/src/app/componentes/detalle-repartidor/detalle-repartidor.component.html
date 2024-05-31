@@ -1,0 +1,30 @@
+<div class="repartidor-grid" *ngIf="repartidor">
+  <div class="grid-item">
+    <strong>Nombre:</strong>
+    {{ repartidor.nombre }}
+  </div>
+  <div class="grid-item">
+    <strong>País:</strong>
+    {{ repartidor.pais }}
+  </div>
+  <div class="grid-item">
+    <strong>Edad:</strong>
+    {{ repartidor.edad }}
+  </div>
+  <div class="grid-item">
+    <strong>Apellido:</strong>
+    {{ repartidor.apellido }}
+  </div>
+  <div class="grid-item">
+    <strong>DNI:</strong>
+    {{ repartidor.dni }}
+  </div>
+  <div class="grid-item">
+    <strong>Capacidad de Transporte:</strong>
+    {{ repartidor.capacidadTransporte }}
+  </div>
+  <div class="grid-item">
+    <strong>Unidad Propia:</strong>
+    {{ repartidor.unidadPropia ? 'Sí' : 'No' }}
+  </div>
+</div>

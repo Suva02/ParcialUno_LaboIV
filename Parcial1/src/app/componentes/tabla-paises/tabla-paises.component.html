@@ -1,0 +1,17 @@
+<table>
+    <thead>
+      <tr>
+        <th>Nombre del País</th>
+        <th>Bandera</th>
+        <th>Seleccionar</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let pais of paises">
+        <td>{{ pais.name.common }}</td>
+        <td><img [src]="pais.flags.svg" alt="{{ pais.name.common }} flag" width="50"></td>
+        <td><input type="checkbox" (change)="selectCountry(pais.name.common)"></td>
+      </tr>
+    </tbody>
+  </table>
+  

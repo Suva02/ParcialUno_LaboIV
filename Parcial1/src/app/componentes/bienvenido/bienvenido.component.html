@@ -1,0 +1,20 @@
+<div class="welcome-container" *ngIf="userData">
+    <nav class="navbar">
+      <ul class="navbar-menu">
+        <li class="navbar-item"><a [routerLink]="['/Login']" class="navbar-link">Logearse</a></li>
+      </ul>
+    </nav>
+    
+    <h1>Bienvenido a Nuestro Proyecto Angular</h1>
+    <p>Estamos encantados de tenerte aquí. ¡Disfruta explorando nuestra aplicación!</p>
+    
+    <div class="user-info">
+      <img [src]="userData.avatar_url" alt="User Avatar" class="avatar">
+      <h2>{{ userData.name }}</h2>
+      <p>{{ userData.bio }}</p>
+      <a [href]="userData.html_url" target="_blank">Ver perfil en GitHub</a>
+    </div>
+  </div>
+
+  <router-outlet></router-outlet>
+  

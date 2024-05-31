@@ -1,0 +1,10 @@
+<div class="repartidores-container">
+  <div class="repartidores-list">
+    <app-listado-repartidores (repartidorSeleccionado)="onRepartidorSeleccionado($event)"></app-listado-repartidores>
+  </div>
+
+  <div class="repartidores-details">
+    <app-detalle-repartidor *ngIf="repartidorSeleccionado" [repartidor]="repartidorSeleccionado"></app-detalle-repartidor>
+    <app-detalle-pais-origen *ngIf="repartidorSeleccionado" [paisOrigen]="repartidorSeleccionado.pais"></app-detalle-pais-origen>
+  </div>
+</div>

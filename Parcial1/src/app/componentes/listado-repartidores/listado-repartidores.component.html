@@ -1,0 +1,6 @@
+<div class="repartidores-grid">
+  <div *ngFor="let repartidor of listaRepartidores" class="repartidor-card" (click)="seleccionarRepartidor(repartidor)">
+    <p>{{ repartidor.nombre }}</p>
+  </div>
+</div>
+
